@@ -2,7 +2,7 @@
 
 module.exports ={
     ensureAuth: function (req,res,next){
-        if(res.isAuthenticated()){
+        if(req.isAuthenticated()){
             return next()
         }else {
             res.redirect('/')

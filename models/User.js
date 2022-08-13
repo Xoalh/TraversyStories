@@ -27,5 +27,6 @@ const UserSchema = new mongoose.Schema({
     }
 })
 
-//will create a new collection users if doesn't already exist. you can add third arg with name of existing if you'd rather do that.
+//will create a new collection users if doesn't already exist. you can add third arg with name of existing if 
+//you'd rather do that.
 module.exports = mongoose.model('User', UserSchema)
